@@ -1,0 +1,23 @@
+{
+  "name": "billpay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch public/scss:public/css",
+    "start":"nodemon index.js",
+    "dev":"concurrently \"npm run start\" \"npm run sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
