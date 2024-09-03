@@ -6,7 +6,7 @@ app.use(express.static("public"));
 
 const port = 3000;
 
-const date = new Date();
+const newDate = new Date();
 
 const daysOfWeek = [
 	"Sunday",
@@ -32,19 +32,17 @@ const months = [
 	"December",
 ];
 
-const dayOfWeek = daysOfWeek[date.getDay()]; // Gets the day of the week as a string
-const month = months[date.getMonth()]; // Gets the month as a string
-const day = date.getDate(); // Gets the day of the month as a number
-const year = date.getFullYear(); // Gets the full year as a number
-
-const formattedDate = `${dayOfWeek} | ${month} ${day}, ${year}`;
+const day = daysOfWeek[newDate.getDay()];
+const month = months[newDate.getMonth()];
+const date = newDate.getDate();
+const year = newDate.getFullYear();
 
 let info = {
 	title: "Billpay & Budget",
 	currentDate: {
-		day: dayOfWeek,
+		day,
 		month,
-		date: day,
+		date,
 		year,
 	},
 	user: {
