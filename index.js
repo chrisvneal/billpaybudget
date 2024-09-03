@@ -58,6 +58,14 @@ app.get("/", (req, res) => {
 	res.render("index.ejs", { info, pageTitle: "Monthly Living Expenses" });
 });
 
+app.get("/debtplan", (req, res) => {
+	res.render("debtplan.ejs", { info, pageTitle: "Debt Plan" });
+});
+
+app.get("/budget", (req, res) => {
+	res.render("budget.ejs", { info, pageTitle: "Monthly Budget" });
+});
+
 app.listen(port, () => {
 	console.log(`Server running on port ${port}`);
 });
