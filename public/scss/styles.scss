@@ -15,12 +15,29 @@ h1 {
 header {
     border-bottom: 1px solid $font-color-light;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .container {
     width: 85%;
     margin: 0 auto;
 }
+
+nav {
+
+    a {
+        color: #03b87b;
+        text-decoration: none;
+    }
+    li {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    
+}
+
 
 .current-date {
     color: $font-color-light;

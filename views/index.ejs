@@ -16,12 +16,23 @@
 	<body>
 		<div class="container">
 			<header>
-				<h1><%= info.title %></h1>
-				<p class="current-date">
-					<strong><%= info.currentDate.day %></strong> | <%=
-					`${info.currentDate.month} ${info.currentDate.date}
-					,${info.currentDate.year}`%>
-				</p>
+				<div class="header__left-side">
+					<h1><%= info.title %></h1>
+					<p class="current-date">
+						<strong><%= info.currentDate.day %></strong> | <%=
+						`${info.currentDate.month} ${info.currentDate.date}
+						,${info.currentDate.year}`%>
+					</p>
+				</div>
+				<div class="header__right-side">
+					<nav>
+						<ul>
+							<li><a href="/monthyliving.ejs">Monthly Living Expenses</a></li>
+							<li><a href="/debtplan.ejs">Debt Plan</a></li>
+							<li><a href="budget.ejs">Monthly Budget</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
 			<p>Hello, <span class="user-name"><%= info.user.firstName %></span></p>

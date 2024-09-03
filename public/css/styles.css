@@ -11,11 +11,23 @@ h1 {
 header {
   border-bottom: 1px solid #979797;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+nav a {
+  color: #03b87b;
+  text-decoration: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 .current-date {
