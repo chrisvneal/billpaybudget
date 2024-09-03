@@ -9,6 +9,10 @@ h1 {
     font-weight: 600;
 }
 
+header {
+    border-bottom: 1px solid $font-color;
+}
+
 .user-name {
     font-weight: 700;
 }
