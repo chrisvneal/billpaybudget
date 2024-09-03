@@ -55,7 +55,7 @@ let info = {
 };
 
 app.get("/", (req, res) => {
-	res.render("index.ejs", { info });
+	res.render("index.ejs", { info, pageTitle: "Monthly Living Expenses" });
 });
 
 app.listen(port, () => {
