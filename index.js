@@ -8,7 +8,13 @@ const port = 3000;
 
 let info = {
 	title: "Billpay & Budget",
-	user: "Chris Neal",
+	user: {
+		firstName: "Chris",
+		lastName: "Neal",
+	},
+	getFullName: function () {
+		return `${this.user.firstName} ${this.user.lastName}`;
+	},
 };
 
 app.get("/", (req, res) => {
