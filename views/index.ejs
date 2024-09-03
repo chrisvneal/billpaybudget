@@ -17,7 +17,13 @@
 		<div class="container">
 			<header>
 				<h1><%= info.title %></h1>
+				<p class="current-date">
+					<strong><%= info.currentDate.day %></strong> | <%=
+					`${info.currentDate.month} ${info.currentDate.date}
+					,${info.currentDate.year}`%>
+				</p>
 			</header>
+
 			<p>Hello, <span class="user-name"><%= info.user.firstName %></span></p>
 		</div>
 	</body>
