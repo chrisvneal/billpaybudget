@@ -1,15 +1,14 @@
-$font-text__main: #616363;
+$font-color: #4a4a4a;
 
 body{
     font-family: "Poppins", sans-serif;
-    color: $font-text__main ;
-
+    color: $font-color ;
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .user-name {
-    font-weight: bold;
+    font-weight: 700;
 }

@@ -1,14 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
-  color: #616363;
+  color: #4a4a4a;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .user-name {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
